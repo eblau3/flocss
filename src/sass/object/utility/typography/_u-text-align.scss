@@ -1,0 +1,17 @@
+@use '../../../global' as *;
+
+// text-align
+@include responsive using ($prefix) {
+  .#{$prefix}u-text-right {
+    text-align: right !important;
+  }
+  .#{$prefix}u-text-center {
+    text-align: center !important;
+  }
+  .#{$prefix}u-text-left {
+    text-align: left !important;
+  }
+  .#{$prefix}u-text-justify {
+    text-align: justify !important;
+  }
+}

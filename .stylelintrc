@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-recess-order"
+  ],
+  "plugins": [
+    "stylelint-order"
+    
+  ],
+  "rules": {
+    "custom-media-pattern": null,
+    "custom-property-pattern": null,
+    "keyframes-name-pattern": null,
+    "selector-class-pattern": null,
+    "selector-id-pattern": null,
+    "color-hex-length": "long",
+    "color-named": "never",
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": "attribute"
+      }
+    ],
+    "declaration-no-important": null,
+    "font-weight-notation": "numeric",
+    "font-family-name-quotes": "always-unless-keyword",
+    "scss/comment-no-empty": null,
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": [
+          "after-single-line-comment",
+          "first-nested"
+        ]
+      }
+    ]
+  }
+}

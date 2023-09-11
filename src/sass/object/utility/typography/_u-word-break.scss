@@ -1,0 +1,15 @@
+@use '../../../global' as *;
+
+// word-break
+@include responsive using ($prefix) {
+  .#{$prefix}u-break-normal {
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+  .#{$prefix}u-break-words {
+    overflow-wrap: break-word !important;
+  }
+  .#{$prefix}u-break-all {
+    word-break: break-all !important;
+  }
+}

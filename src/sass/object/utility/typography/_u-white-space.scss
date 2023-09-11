@@ -1,0 +1,20 @@
+@use '../../../global' as *;
+
+// white-space
+@include responsive using ($prefix) {
+  .#{$prefix}u-whitespace-normal {
+    white-space: normal !important;
+  }
+  .#{$prefix}u-whitespace-nowrap {
+    white-space: nowrap !important;
+  }
+  .#{$prefix}u-whitespace-pre {
+    white-space: pre !important;
+  }
+  .#{$prefix}u-whitespace-pre-line {
+    white-space: pre-line !important;
+  }
+  .#{$prefix}u-whitespace-pre-wrap {
+    white-space: pre-wrap !important;
+  }
+}

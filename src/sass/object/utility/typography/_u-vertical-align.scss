@@ -1,0 +1,23 @@
+@use '../../../global' as *;
+
+// vertical-align
+@include responsive using ($prefix) {
+  .#{$prefix}u-align-baseline {
+    vertical-align: baseline !important;
+  }
+  .#{$prefix}u-align-top {
+    vertical-align: top !important;
+  }
+  .#{$prefix}u-align-middle {
+    vertical-align: middle !important;
+  }
+  .#{$prefix}u-align-bottom {
+    vertical-align: bottom !important;
+  }
+  .#{$prefix}u-align-text-top {
+    vertical-align: text-top !important;
+  }
+  .#{$prefix}u-align-text-bottom {
+    vertical-align: text-bottom !important;
+  }
+}

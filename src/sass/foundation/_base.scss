@@ -1,0 +1,42 @@
+@use '../global' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: font-family('system');
+  font-weight: font-weight('normal');
+  font-kerning: normal;
+  line-height: line-height(normal);
+  color: color('black');
+  letter-spacing: letter-spacing(normal);
+
+  @include font-size(normal);
+}
+
+img,
+svg,
+object,
+iframe {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+img {
+  pointer-events: none;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+::placeholder {
+  color: #a0a0a0;
+}

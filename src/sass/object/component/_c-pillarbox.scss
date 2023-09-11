@@ -1,0 +1,34 @@
+// ----------------------------------------------------------------------------------------------------
+// Pillarbox
+// ----------------------------------------------------------------------------------------------------
+// Use:
+// <div class="c-pillarbox">...</div>
+//
+// Modifire:
+// c-pillarbox--[ sm | lg | xl ]
+// ----------------------------------------------------------------------------------------------------
+@use '../../global' as *;
+
+@include responsive using ($prefix) {
+  .#{$prefix}c-pillarbox {
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: auto;
+    margin-left: auto;
+
+    &--sm {
+      padding-right: 2.5%;
+      padding-left: 2.5%;
+    }
+
+    &--lg {
+      padding-right: 10%;
+      padding-left: 10%;
+    }
+
+    &--xl {
+      padding-right: 15%;
+      padding-left: 15%;
+    }
+  }
+}

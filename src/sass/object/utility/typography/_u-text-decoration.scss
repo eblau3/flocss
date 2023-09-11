@@ -1,0 +1,14 @@
+@use '../../../global' as *;
+
+// text-decoration
+@include responsive using ($prefix) {
+  .#{$prefix}u-underline {
+    text-decoration: underline !important;
+  }
+  .#{$prefix}u-line-through {
+    text-decoration: line-through !important;
+  }
+  .#{$prefix}u-no-underline {
+    text-decoration: none !important;
+  }
+}

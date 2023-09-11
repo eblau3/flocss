@@ -1,0 +1,41 @@
+// customize
+@forward 'customize/u-background-color';
+@forward 'customize/u-color';
+@forward 'customize/u-font-family';
+@forward 'customize/u-font-weight';
+@forward 'customize/u-gap';
+@forward 'customize/u-line-height';
+@forward 'customize/u-letter-spacing';
+@forward 'customize/u-margin';
+@forward 'customize/u-padding';
+
+// flexbox
+@forward 'flexbox/u-align-content';
+@forward 'flexbox/u-align-items';
+@forward 'flexbox/u-align-self';
+@forward 'flexbox/u-flex-direction';
+@forward 'flexbox/u-flex-grow';
+@forward 'flexbox/u-flex-shrink';
+@forward 'flexbox/u-flex-wrap';
+@forward 'flexbox/u-flex';
+@forward 'flexbox/u-justify-content';
+@forward 'flexbox/u-justify-items';
+@forward 'flexbox/u-justify-self';
+@forward 'flexbox/u-order';
+
+// layout
+@forward 'layout/u-display';
+@forward 'layout/u-overflow';
+
+// sizing
+@forward 'sizing/u-width';
+@forward 'sizing/u-height';
+
+// typography
+@forward 'typography/u-clamp';
+@forward 'typography/u-text-align';
+@forward 'typography/u-text-decoration';
+@forward 'typography/u-text-indent';
+@forward 'typography/u-vertical-align';
+@forward 'typography/u-white-space';
+@forward 'typography/u-word-break';
