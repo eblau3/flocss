@@ -1,11 +1,6 @@
 @use 'variable' as *;
 @use 'sass:map';
 
-// color
-@function color($key) {
-  @return map.get($color, $key);
-}
-
 // font-size
 @function font-size($key, $key2) {
   @return map.get($font-size, $key, $key2);
@@ -29,6 +24,11 @@
 // line-height
 @function line-height($key) {
   @return map.get($line-height, $key);
+}
+
+// color
+@function color($key) {
+  @return map.get($color, $key);
 }
 
 // spacing

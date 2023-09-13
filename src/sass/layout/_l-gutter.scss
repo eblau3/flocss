@@ -2,19 +2,19 @@
 // Gutter
 // ----------------------------------------------------------------------------------------------------
 // Use:
-// <ul class="c-grid c-gutter--lg">
-//   <li class="c-grid__6">...</li>
-//   <li class="c-grid__6">...</li>
+// <ul class="l-grid l-gutter--lg">
+//   <li class="l-grid__6">...</li>
+//   <li class="l-grid__6">...</li>
 // </ul>
 //
 // Modifire:
-// c-grid--[ $spacing ]
+// l-grid--[ $spacing ]
 // ----------------------------------------------------------------------------------------------------
-@use '../../global' as *;
+@use '../global' as *;
 
 @include responsive using ($prefix) {
   @each $name, $value in $spacing {
-    .#{$prefix}c-gutter--#{$name} {
+    .#{$prefix}l-gutter--#{$name} {
       margin-top: -#{$value};
       margin-left: -#{$value};
 

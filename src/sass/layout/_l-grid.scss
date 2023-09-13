@@ -2,20 +2,20 @@
 // Grid
 // ----------------------------------------------------------------------------------------------------
 // Use:
-// <ul class="c-grid">
-//   <li class="c-grid__6">...</li>
-//   <li class="c-grid__6">...</li>
+// <ul class="l-grid">
+//   <li class="l-grid__6">...</li>
+//   <li class="l-grid__6">...</li>
 // </ul>
 // ----------------------------------------------------------------------------------------------------
-@use '../../global' as *;
+@use '../global' as *;
 
-.c-grid {
+.l-grid {
   display: flex;
   flex-wrap: wrap;
 }
 
 @include responsive using ($prefix) {
-  .#{$prefix}c-grid {
+  .#{$prefix}l-grid {
     &__auto {
       flex: 0 1 auto;
     }

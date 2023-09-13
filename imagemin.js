@@ -2,7 +2,7 @@ import imagemin from 'imagemin-keep-folder';
 import imageminWebp from "imagemin-webp";
 import imageminSvgo from "imagemin-svgo";
  
-imagemin(['src/images/**/*.{jpg,png}'], {
+imagemin(['src/images/**/*'], {
   use: [
     imageminWebp({
       quality: 50

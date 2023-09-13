@@ -1,7 +1,5 @@
 @use '../../global' as *;
 
 .p-block {
-  padding-top: spacing(lg);
-
-  @include font-size(normal);
+  color: color('black');
 }
