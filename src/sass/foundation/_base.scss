@@ -15,7 +15,6 @@ body {
   line-height: line-height(normal);
   color: color('black');
   letter-spacing: letter-spacing(normal);
-
   @include font-size(normal);
 }
 

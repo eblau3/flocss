@@ -23,10 +23,8 @@
 // responsive
 @mixin responsive {
   @content (null);
-
   @each $name, $value in $breakpoints {
     $prefix: '#{$name}\\:';
-
     @media screen and (max-width: $value) {
       @content ($prefix);
     }
@@ -38,7 +36,6 @@
   @if $lg {
     font-size: map.get($font-size, $lg, lg);
   }
-
   @if $md {
     @include media(md) {
       font-size: map.get($font-size, $md, md);
@@ -48,7 +45,6 @@
       font-size: map.get($font-size, $lg, md);
     }
   }
-
   @if $sm {
     @include media(sm) {
       font-size: map.get($font-size, $sm, sm);
