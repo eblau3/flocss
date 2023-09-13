@@ -21,19 +21,16 @@
     "rule-empty-line-before": [
       "always-multi-line",
       {
-        "except": [
-          "after-single-line-comment",
-          "first-nested"
-        ]
+        "except": ["after-single-line-comment", "first-nested"]
       }
     ],
     "at-rule-empty-line-before": [
-			"always",
-			{
-				"except": ["inside-block", "blockless-after-blockless", "first-nested"],
-				"ignore": ["after-comment"],
-				"ignoreAtRules": ["else"]
-			}
-		]
+      "always",
+      {
+        "except": ["inside-block", "blockless-after-blockless", "first-nested"],
+        "ignore": ["after-comment"],
+        "ignoreAtRules": ["else"]
+      }
+    ]
   }
 }
