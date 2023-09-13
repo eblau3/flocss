@@ -1,3 +1,11 @@
+# DEMO
+- Pugのトランスパイル
+- Dart-Sassのトランスパイル
+- image-minによる画像圧縮、WebP変換
+- StyleLintによるSassリンター
+- ESLintによるJavaScriptリンター
+- Prettiernによるコード整形
+
 ## Install
 ~~~
 npm install
