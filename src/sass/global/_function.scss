@@ -36,6 +36,11 @@
   @return map.get($spacing, $key);
 }
 
+// easing
+@function easing($key) {
+  @return map.get($easing, $key);
+}
+
 // image
 @function image($name) {
   @return url('#{$path}/#{$name}');
