@@ -2,6 +2,9 @@
 
 // gap
 @include responsive using ($prefix) {
+  .#{$prefix}u-gap-0 {
+    gap: 0 !important;
+  }
   @each $name, $value in $spacing {
     .#{$prefix}u-gap-#{$name} {
       gap: spacing($name) !important;
@@ -11,24 +14,24 @@
 
 // column-gap
 @include responsive using ($prefix) {
+  .#{$prefix}u-gap-x-0 {
+    column-gap: 0 !important;
+  }
   @each $name, $value in $spacing {
     .#{$prefix}u-gap-x-#{$name} {
       column-gap: spacing($name) !important;
     }
   }
-  .#{$prefix}u-gap-x-0 {
-    column-gap: 0 !important;
-  }
 }
 
 // row-gap
 @include responsive using ($prefix) {
+  .#{$prefix}u-gap-y-0 {
+    row-gap: 0 !important;
+  }
   @each $name, $value in $spacing {
     .#{$prefix}u-gap-y-#{$name} {
       row-gap: spacing($name) !important;
     }
-  }
-  .#{$prefix}u-gap-y-0 {
-    row-gap: 0 !important;
   }
 }

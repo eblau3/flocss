@@ -11,6 +11,16 @@
 @use '../global' as *;
 
 @include responsive using ($prefix) {
+  .#{$prefix}l-gutter--none {
+    margin-top: 0;
+    margin-left: 0;
+
+    & > * {
+      padding-top: 0;
+      padding-left: 0;
+    }
+  }
+  
   @each $name, $value in $spacing {
     .#{$prefix}l-gutter--#{$name} {
       margin-top: -#{$value};
@@ -20,16 +30,6 @@
         padding-top: $value;
         padding-left: $value;
       }
-    }
-  }
-
-  .#{$prefix}l-gutter--none {
-    margin-top: 0;
-    margin-left: 0;
-
-    & > * {
-      padding-top: 0;
-      padding-left: 0;
     }
   }
 }
