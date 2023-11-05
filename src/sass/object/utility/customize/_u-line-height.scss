@@ -4,7 +4,7 @@
 @include responsive using ($prefix) {
   @each $name, $value in $line-height {
     .#{$prefix}u-leading-#{$name} {
-      line-height: leading($name) !important;
+      line-height: line-height($name) !important;
     }
   }
 }

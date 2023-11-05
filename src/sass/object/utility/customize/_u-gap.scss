@@ -9,20 +9,26 @@
   }
 }
 
-// row-gap
+// column-gap
 @include responsive using ($prefix) {
   @each $name, $value in $spacing {
-    .#{$prefix}u-row-gap-#{$name} {
-      row-gap: spacing($name) !important;
+    .#{$prefix}u-gap-x-#{$name} {
+      column-gap: spacing($name) !important;
     }
+  }
+  .#{$prefix}u-gap-x-0 {
+    column-gap: 0 !important;
   }
 }
 
-// col-gap
+// row-gap
 @include responsive using ($prefix) {
   @each $name, $value in $spacing {
-    .#{$prefix}u-col-gap-#{$name} {
-      gap: spacing($name) !important;
+    .#{$prefix}u-gap-y-#{$name} {
+      row-gap: spacing($name) !important;
     }
+  }
+  .#{$prefix}u-gap-y-0 {
+    row-gap: 0 !important;
   }
 }

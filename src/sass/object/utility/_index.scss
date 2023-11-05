@@ -1,9 +1,11 @@
 // customize
 @forward 'customize/u-background-color';
+@forward 'customize/u-clamp';
 @forward 'customize/u-color';
 @forward 'customize/u-font-family';
 @forward 'customize/u-font-weight';
 @forward 'customize/u-gap';
+@forward 'customize/u-indent';
 @forward 'customize/u-line-height';
 @forward 'customize/u-letter-spacing';
 @forward 'customize/u-margin';
@@ -32,10 +34,8 @@
 @forward 'sizing/u-height';
 
 // typography
-@forward 'typography/u-clamp';
 @forward 'typography/u-text-align';
 @forward 'typography/u-text-decoration';
-@forward 'typography/u-text-indent';
 @forward 'typography/u-vertical-align';
 @forward 'typography/u-white-space';
 @forward 'typography/u-word-break';

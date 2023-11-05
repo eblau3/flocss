@@ -1,10 +1,10 @@
 # DEMO
-- Pugのトランスパイル
-- Dart-Sassのトランスパイル
-- image-minによる画像圧縮、WebP変換
-- StyleLintによるSassリンター
-- ESLintによるJavaScriptリンター
-- Prettiernによるコード整形
+- テンプレートエンジン：Pug
+- スタイルシート：Dart-Sass
+- 画像処理：image-min
+- コード整形：Prettier
+- Sassリンター：StyleLint
+- JavaScriptリンター：ESLint
 
 ## Install
 ~~~
@@ -39,12 +39,4 @@ npm run format:js
 ### Build
 ```
 npm run build
-```
-
-## Other Scripts
-
-### Lint
-```
-npm run lint:sass
-npm run lint:js
 ```

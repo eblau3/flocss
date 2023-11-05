@@ -6,6 +6,7 @@
 //
 // Modifire:
 // c-frame--[ 1to1 | 4to3 | 3to2 | 16to9 | 2to1 | 12to5 ]
+// c-frame--contain
 // --------------------------------------------------
 @use '../../global' as *;
 
@@ -20,6 +21,13 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  &--contain {
+    & > img,
+    & > iframe {
+      object-fit: contain;
+    }
   }
 
   &--1to1 {

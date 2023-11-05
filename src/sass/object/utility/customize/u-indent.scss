@@ -1,0 +1,17 @@
+@use '../../../global' as *;
+
+// indent
+@include responsive using ($prefix) {
+  .#{$prefix}u-indent-1 {
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+  .#{$prefix}u-indent-2 {
+    padding-left: 2em;
+    text-indent: -2em;
+  }
+  .#{$prefix}u-indent-3 {
+    padding-left: 3em;
+    text-indent: -3em;
+  }
+}
