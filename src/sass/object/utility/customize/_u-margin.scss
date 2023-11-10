@@ -7,6 +7,7 @@
   .#{$prefix}u-m-0 {
     margin: 0 !important;
   }
+
   // margin
   @each $name, $value in $spacing {
     .#{$prefix}u-m-#{$name} {

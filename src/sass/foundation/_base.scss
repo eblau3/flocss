@@ -20,11 +20,14 @@ body {
 
 img,
 svg,
-object,
-iframe {
+object {
   width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+iframe {
+  max-width: 100%;
 }
 
 img {
