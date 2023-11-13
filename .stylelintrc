@@ -12,6 +12,7 @@
     "keyframes-name-pattern": null,
     "selector-class-pattern": null,
     "selector-id-pattern": null,
+    "color-function-notation": "legacy",
     "color-hex-length": "long",
     "color-named": "never",
     "declaration-no-important": null,
