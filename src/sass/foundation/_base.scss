@@ -40,32 +40,17 @@ ol {
   list-style-position: inside;
 }
 
-button {
-  background: unset;
-  border: unset;
-  cursor: pointer;
-}
-
-label {
-  cursor: pointer;
-}
-
 a {
   text-underline-offset: 0.2em;
 }
 
+button {
+  color: unset;
+  cursor: pointer;
+  background: unset;
+  border: unset;
+}
+
 ::placeholder {
   color: #a0a0a0;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: rgba(color('black'), 0.3);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: color('black');
 }

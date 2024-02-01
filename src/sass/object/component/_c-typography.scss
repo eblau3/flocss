@@ -1,6 +1,6 @@
 // --------------------------------------------------
 // Usage:
-// <p class="c-typography">...</p>
+// <p class="c-typography c-typography--normal">...</p>
 //
 // Modifire:
 // c-typography--normal
@@ -9,8 +9,4 @@
 
 .c-typography--normal {
   font-size: font-size(normal);
-}
-
-.c-typography--heading {
-  font-size: font-size(lg);
 }

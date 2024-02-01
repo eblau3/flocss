@@ -1,30 +1,31 @@
 @use 'root' as *;
 
-$font-size: 16px;
-
-
+$spacing: (
+  none: 0,
+  2xs: rem(4),
+  xs: rem(8),
+  sm: rem(16),
+  md: rem(24),
+  lg: rem(32),
+  xl: rem(48),
+  2xl: rem(64),
+  3xl: rem(80),
+  4xl: rem(112),
+  5xl: rem(144),
+);
 $color: (
-  'gray-100': #f3f4f6,
-  'gray-200': #e5e7eb,
-  'gray-300': #d1d5db,
-  'gray-400': #9ca3af,
-  'gray-500': #6b7280,
-  'gray-600': #4b5563,
-  'gray-700': #374151,
-  'gray-800': #1f2937,
-  'gray-900': #111827,
   'black': #000000,
   'white': #ffffff,
 );
 $font-size: (
-  sm: rem(12.8),
+  2xs: rem(10),
+  xs: rem(12),
+  sm: rem(14),
   normal: rem(16),
-  lg: rem(20),
-  xl: rem(25),
-  2xl: rem(31.25),
-  3xl: rem(39.06),
-  4xl: rem(48.83),
-  5xl: rem(61.04),
+  lg: rem(18),
+  xl: rem(20),
+  2xl: rem(24),
+  3xl: rem(32),
 );
 $font-family: (
   'system': #{'Helvetica Neue',
@@ -61,17 +62,6 @@ $line-height: (
   lg: 1.8,
   xl: 2,
 );
-$spacing: (
-  none: 0,
-  xs: rem(4),
-  sm: rem(8),
-  md: rem(12),
-  lg: rem(20),
-  xl: rem(32),
-  2xl: rem(52),
-  3xl: rem(84),
-  4xl: rem(136),
-);
 $easing: (
   ease-out-sine: cubic-bezier(0.61, 1, 0.88, 1),
   ease-out-quad: cubic-bezier(0.5, 1, 0.89, 1),
@@ -82,7 +72,7 @@ $easing: (
   ease-out-circ: cubic-bezier(0, 0.55, 0.45, 1),
 );
 $breakpoints: (
-  'md': 768px,
-  'sm': 414px,
+  'md': 1024px,
+  'sm': 599px,
 );
 $path: '../images';
