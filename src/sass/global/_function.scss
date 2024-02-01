@@ -2,8 +2,8 @@
 @use 'sass:map';
 
 // font-size
-@function font-size($key, $key2) {
-  @return map.get($font-size, $key, $key2);
+@function font-size($key) {
+  @return map.get($font-size, $key);
 }
 
 // font-family

@@ -10,6 +10,11 @@
       padding: $value !important;
     }
   }
+  @each $name, $value in $spacing {
+    .#{$prefix}u-h-#{$name} {
+      height: $value !important;
+    }
+  }
 
   // padding-top
   .#{$prefix}u-pt-0 {

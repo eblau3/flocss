@@ -1,5 +1,8 @@
 @use 'root' as *;
 
+$font-size: 16px;
+
+
 $color: (
   'gray-100': #f3f4f6,
   'gray-200': #e5e7eb,
@@ -14,46 +17,14 @@ $color: (
   'white': #ffffff,
 );
 $font-size: (
-  2xs: (
-    sm: rem(8),
-    md: rem(8),
-    lg: rem(10),
-  ),
-  xs: (
-    sm: rem(10),
-    md: rem(10),
-    lg: rem(12),
-  ),
-  sm: (
-    sm: rem(12),
-    md: rem(12),
-    lg: rem(14),
-  ),
-  normal: (
-    sm: rem(14),
-    md: rem(14),
-    lg: rem(16),
-  ),
-  lg: (
-    sm: rem(16),
-    md: rem(16),
-    lg: rem(18),
-  ),
-  xl: (
-    sm: rem(18),
-    md: rem(18),
-    lg: rem(20),
-  ),
-  2xl: (
-    sm: rem(20),
-    md: rem(20),
-    lg: rem(24),
-  ),
-  3xl: (
-    sm: rem(24),
-    md: rem(24),
-    lg: rem(32),
-  ),
+  sm: rem(12.8),
+  normal: rem(16),
+  lg: rem(20),
+  xl: rem(25),
+  2xl: rem(31.25),
+  3xl: rem(39.06),
+  4xl: rem(48.83),
+  5xl: rem(61.04),
 );
 $font-family: (
   'system': #{'Helvetica Neue',
@@ -92,16 +63,14 @@ $line-height: (
 );
 $spacing: (
   none: 0,
-  2xs: rem(4),
-  xs: rem(8),
-  sm: rem(16),
-  md: rem(24),
-  lg: rem(32),
-  xl: rem(48),
-  2xl: rem(64),
-  3xl: rem(80),
-  4xl: rem(112),
-  5xl: rem(144),
+  xs: rem(4),
+  sm: rem(8),
+  md: rem(12),
+  lg: rem(20),
+  xl: rem(32),
+  2xl: rem(52),
+  3xl: rem(84),
+  4xl: rem(136),
 );
 $easing: (
   ease-out-sine: cubic-bezier(0.61, 1, 0.88, 1),
@@ -113,7 +82,7 @@ $easing: (
   ease-out-circ: cubic-bezier(0, 0.55, 0.45, 1),
 );
 $breakpoints: (
-  'md': 1024px,
-  'sm': 599px,
+  'md': 768px,
+  'sm': 414px,
 );
 $path: '../images';

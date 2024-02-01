@@ -19,20 +19,25 @@
     "font-weight-notation": "numeric",
     "font-family-name-quotes": "always-unless-keyword",
     "scss/comment-no-empty": null,
+    "unit-no-unknown": null,
+    "no-descending-specificity": null,
     "rule-empty-line-before": [
       "always-multi-line",
       {
-        "except": ["after-single-line-comment", "first-nested"]
+        "except": [
+          "after-single-line-comment",
+          "first-nested"
+        ]
       }
     ],
     "at-rule-empty-line-before": [
-      "always",
-      {
-        "except": ["inside-block", "blockless-after-blockless", "first-nested"],
-        "ignore": ["after-comment"],
-        "ignoreAtRules": ["else"]
-      }
-    ],
+			"always",
+			{
+				"except": ["inside-block", "blockless-after-blockless", "first-nested"],
+				"ignore": ["after-comment"],
+				"ignoreAtRules": ["else"]
+			}
+		],
     "declaration-block-no-redundant-longhand-properties": null
   }
 }

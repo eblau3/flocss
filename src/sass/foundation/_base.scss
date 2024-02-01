@@ -9,13 +9,14 @@ html {
 }
 
 body {
+  width: 100%;
   font-family: font-family('system');
+  font-size: font-size(normal);
   font-weight: font-weight('normal');
   font-kerning: normal;
   line-height: line-height(normal);
   color: color('black');
   letter-spacing: letter-spacing(normal);
-  @include font-size(normal);
 }
 
 img,
@@ -39,6 +40,32 @@ ol {
   list-style-position: inside;
 }
 
+button {
+  background: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
+
+a {
+  text-underline-offset: 0.2em;
+}
+
 ::placeholder {
   color: #a0a0a0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(color('black'), 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: color('black');
 }

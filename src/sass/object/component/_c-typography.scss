@@ -3,65 +3,14 @@
 // <p class="c-typography">...</p>
 //
 // Modifire:
-// c-typography--[ $font-size ]
-// c-typography--[ $font-family ]
-// c-typography--emphasis-[ $font-weight ]
-// c-typography--tracking-[ $letter-spacing ]
-// c-typography--leading-[ $line-height ]
-// c-typography--[ $color ]
+// c-typography--normal
 // --------------------------------------------------
 @use '../../global' as *;
 
-// font-size
-@each $name, $value in $font-size {
-  .c-typography--#{$name} {
-    @include font-size($name);
-  }
+.c-typography--normal {
+  font-size: font-size(normal);
 }
 
-@each $name, $value in $font-size {
-  .md\:c-typography--#{$name} {
-    @include font-size(null, $name);
-  }
-}
-
-@each $name, $value in $font-size {
-  .sm\:c-typography--#{$name} {
-    @include font-size(null, null, $name);
-  }
-}
-
-// font-family
-@each $name, $value in $font-family {
-  .c-typography--#{$name} {
-    font-family: $value;
-  }
-}
-
-// font-weight
-@each $name, $value in $font-weight {
-  .c-typography--emphasis-#{$name} {
-    font-weight: $value;
-  }
-}
-
-// letter-spacing
-@each $name, $value in $letter-spacing {
-  .c-typography--tracking-#{$name} {
-    letter-spacing: $value;
-  }
-}
-
-// line-height
-@each $name, $value in $line-height {
-  .c-typography--leading-#{$name} {
-    line-height: $value;
-  }
-}
-
-// color
-@each $name, $value in $color {
-  .c-typography--#{$name} {
-    color: $value;
-  }
+.c-typography--heading {
+  font-size: font-size(lg);
 }
