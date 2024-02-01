@@ -17,15 +17,18 @@ $color: (
   'black': #000000,
   'white': #ffffff,
 );
+// scale = 1.25
 $font-size: (
   2xs: rem(10),
   xs: rem(12),
   sm: rem(14),
   normal: rem(16),
-  lg: rem(18),
-  xl: rem(20),
-  2xl: rem(24),
-  3xl: rem(32),
+  lg: rem(20),
+  xl: rem(25),
+  2xl: rem(31.25),
+  3xl: rem(39.06),
+  4xl: rem(48.83),
+  5xl: rem(61.04),
 );
 $font-family: (
   'system': #{'Helvetica Neue',
