@@ -1,5 +1,8 @@
 @use '../../global' as *;
 
 .p-block {
-  color: color('black');
+  //@debug color('black');
+  //@debug spacing('none');
+  @debug spacing('2xl');
+  //@debug color('white');
 }

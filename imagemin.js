@@ -5,7 +5,7 @@ import imageminSvgo from "imagemin-svgo";
 imagemin(['src/images/**/*'], {
   use: [
     imageminWebp({
-      quality: 50
+      quality: 90
     }),
     imageminSvgo()
   ],

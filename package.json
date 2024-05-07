@@ -7,8 +7,6 @@
   "scripts": {
     "build": "npm-run-all --serial clean copy html css js img",
     "server": "npm-run-all --serial clean copy html css js img watch",
-    "pretty": "npm-run-all --serial pretty:*",
-    "format": "npm-run-all --serial format:*",
     "html": "cpx \"src/html/**/*\" dist/",
     "css:sass": "sass src/sass/style.scss:dist/assets/css/style.css",
     "css:postcss": "postcss dist/assets/css/style.css --output dist/assets/css/style.css",
@@ -27,10 +25,13 @@
     "copy:apple-touch-icon": "cpx \"src/apple-touch-icon.png\" dist/",
     "copy": "npm-run-all --parallel copy:*",
     "clean": "rimraf dist",
+    "pretty:html": "prettier \"src/html/**/*\" --write",
     "pretty:sass": "prettier \"src/sass/**/*.scss\" --write",
     "pretty:js": "prettier \"src/js/**/*.js\" --write",
+    "pretty": "npm-run-all --serial pretty:*",
     "lint:sass": "stylelint \"src/sass/**/*.scss\"",
-    "format:sass": "stylelint \"src/sass/**/*.scss\" --fix"
+    "format:sass": "stylelint \"src/sass/**/*.scss\" --fix",
+    "format": "npm-run-all --serial format:*"
   },
   "keywords": [],
   "author": "",

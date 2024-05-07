@@ -1,12 +1,12 @@
 // --------------------------------------------------
 // Usage:
-// <p class="c-typography c-typography--normal">...</p>
+// <p class="c-typography c-typography--text">...</p>
 //
 // Modifire:
-// c-typography--normal
+// c-typography--text
 // --------------------------------------------------
 @use '../../global' as *;
 
-.c-typography--normal {
+.c-typography--text {
   font-size: font-size(normal);
 }

@@ -17,6 +17,7 @@ body {
   line-height: line-height(normal);
   color: color('black');
   letter-spacing: letter-spacing(normal);
+  text-underline-offset: 0.2em;
 }
 
 img,
@@ -40,15 +41,15 @@ ol {
   list-style-position: inside;
 }
 
-a {
-  text-underline-offset: 0.2em;
-}
-
 button {
   color: unset;
   cursor: pointer;
   background: unset;
   border: unset;
+}
+
+label {
+  cursor: pointer;
 }
 
 ::placeholder {

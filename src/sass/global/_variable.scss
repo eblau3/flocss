@@ -1,17 +1,17 @@
 @use 'root' as *;
 
 $spacing: (
-  none: 0,
-  2xs: rem(4),
-  xs: rem(8),
-  sm: rem(16),
-  md: rem(24),
-  lg: rem(32),
-  xl: rem(48),
-  2xl: rem(64),
-  3xl: rem(80),
-  4xl: rem(112),
-  5xl: rem(144),
+  'none': 0,
+  '2xs': rem(4),
+  'xs': rem(8),
+  'sm': rem(16),
+  'md': rem(24),
+  'lg': rem(32),
+  'xl': rem(48),
+  '2xl': rem(64),
+  '3xl': rem(80),
+  '4xl': rem(112),
+  '5xl': rem(144),
 );
 $color: (
   'black': #000000,
@@ -19,16 +19,16 @@ $color: (
 );
 // scale = 1.25
 $font-size: (
-  2xs: rem(10),
-  xs: rem(12),
-  sm: rem(14),
-  normal: rem(16),
-  lg: rem(20),
-  xl: rem(25),
-  2xl: rem(31.25),
-  3xl: rem(39.06),
-  4xl: rem(48.83),
-  5xl: rem(61.04),
+  '2xs': rem(10),
+  'xs': rem(12),
+  'sm': rem(14),
+  'normal': rem(16),
+  'lg': rem(20),
+  'xl': rem(25),
+  '2xl': rem(31.25),
+  '3xl': rem(39.06),
+  '4xl': rem(48.83),
+  '5xl': rem(61.04),
 );
 $font-family: (
   'system': #{'Helvetica Neue',
@@ -50,32 +50,31 @@ $font-weight: (
   'black': 900,
 );
 $letter-spacing: (
-  xs: -0.05em,
-  sm: -0.025em,
-  normal: 0,
-  lg: 0.025em,
-  xl: 0.05em,
-  2xl: 0.1em,
+  'xs': -0.05em,
+  'sm': -0.025em,
+  'normal': 0,
+  'lg': 0.025em,
+  'xl': 0.05em,
+  '2xl': 0.1em,
 );
 $line-height: (
-  none: 1,
-  xs: 1.2,
-  sm: 1.4,
-  normal: 1.6,
-  lg: 1.8,
-  xl: 2,
+  'none': 1,
+  'sm': 1.25,
+  'normal': 1.5,
+  'lg': 1.75,
+  'xl': 2,
 );
 $easing: (
-  ease-out-sine: cubic-bezier(0.61, 1, 0.88, 1),
-  ease-out-quad: cubic-bezier(0.5, 1, 0.89, 1),
-  ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1),
-  ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1),
-  ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1),
-  ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1),
-  ease-out-circ: cubic-bezier(0, 0.55, 0.45, 1),
+  'ease-out-sine': cubic-bezier(0.61, 1, 0.88, 1),
+  'ease-out-quad': cubic-bezier(0.5, 1, 0.89, 1),
+  'ease-out-cubic': cubic-bezier(0.33, 1, 0.68, 1),
+  'ease-out-quart': cubic-bezier(0.25, 1, 0.5, 1),
+  'ease-out-quint': cubic-bezier(0.22, 1, 0.36, 1),
+  'ease-out-expo': cubic-bezier(0.16, 1, 0.3, 1),
+  'ease-out-circ': cubic-bezier(0, 0.55, 0.45, 1),
 );
 $breakpoints: (
-  'md': 1024px,
-  'sm': 599px,
+  'md': 840px,
+  'sm': 430px,
 );
 $path: '../images';
