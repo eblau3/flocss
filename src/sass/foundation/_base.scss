@@ -16,8 +16,8 @@ body {
   font-kerning: normal;
   line-height: line-height('normal');
   color: color('black');
-  letter-spacing: letter-spacing('normal');
   text-underline-offset: 0.2em;
+  letter-spacing: letter-spacing('normal');
 }
 
 img,
@@ -50,6 +50,12 @@ button {
 
 label {
   cursor: pointer;
+}
+
+input,
+textarea {
+  border: unset;
+  background-color: unset;
 }
 
 ::placeholder {

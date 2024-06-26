@@ -3,7 +3,7 @@
 // <a class="c-hover c-hover--opacity">...</a>
 //
 // Modifire:
-// c-hover--[ remove | underline ]
+// c-hover--[ remove | underline | light | dark ]
 // --------------------------------------------------
 @use '../../global' as *;
 
@@ -14,6 +14,7 @@
 .c-hover--opacity {
   opacity: 1;
   transition: all 0.2s easing('ease-out-quart');
+
   &:hover {
     opacity: 0.7;
   }
@@ -27,6 +28,7 @@
 .c-hover--underline {
   text-decoration: underline;
   transition: all 0.2s easing('ease-out-quart');
+
   &:hover {
     text-decoration: none;
     opacity: 1;
@@ -36,6 +38,7 @@
 .c-hover--light {
   filter: brightness(1);
   transition: all 0.2s easing('ease-out-quart');
+
   &:hover {
     filter: brightness(1.1);
   }
@@ -44,6 +47,7 @@
 .c-hover--dark {
   filter: brightness(1);
   transition: all 0.2s easing('ease-out-quart');
+
   &:hover {
     filter: brightness(0.9);
   }
