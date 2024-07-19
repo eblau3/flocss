@@ -1,7 +1,7 @@
 @use '../../../global' as *;
 
 // display
-@include responsive using ($prefix) {
+@include apply-breakpoints using ($prefix) {
   .#{$prefix}u-block {
     display: block !important;
   }

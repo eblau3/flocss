@@ -1,7 +1,7 @@
 @use '../../../global' as *;
 
 // clamp
-@include responsive using ($prefix) {
+@include apply-breakpoints using ($prefix) {
   .#{$prefix}u-clamp-1 {
     display: -webkit-box;
     -webkit-line-clamp: 1;

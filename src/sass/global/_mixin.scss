@@ -20,8 +20,8 @@
   }
 }
 
-// responsive
-@mixin responsive {
+// apply-breakpoints
+@mixin apply-breakpoints {
   @content (null);
   @each $name, $value in $breakpoints {
     $prefix: '#{$name}\\:';

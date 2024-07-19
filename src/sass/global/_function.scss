@@ -1,5 +1,7 @@
+@use 'root' as *;
 @use 'variable' as *;
 @use 'sass:map';
+@use 'sass:math';
 
 // font-size
 @function font-size($key) {
@@ -44,4 +46,23 @@
 // image
 @function image($name) {
   @return url('#{$path}/#{$name}');
+}
+
+// responsive-clamp
+@function responsive-clamp (
+  $min-size,
+  $max-size,
+  $min-container: rem(375),
+  $max-container: rem(1200)
+) {
+  $min-size: strip-unit($min-size);
+  $max-size: strip-unit($max-size);
+  $min-container: strip-unit($min-container);
+  $max-container: strip-unit($max-container);
+  $slope: math.div(($max-size - $min-size), ($max-container - $min-container));
+  $y-intercept: $min-size - $slope * $min-container;
+  @return min(
+    clamp(#{$min-size}rem, #{$y-intercept}rem + #{$slope * 100}vw, #{$max-size}rem),
+    ($min-size / $min-container) * 100vw
+  );
 }

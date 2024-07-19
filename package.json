@@ -26,7 +26,6 @@
     "copy:apple-touch-icon": "cpx \"src/apple-touch-icon.png\" dist/",
     "copy": "npm-run-all --parallel copy:*",
     "clean": "rimraf dist",
-    "pretty:html": "prettier \"src/html/**/*.html\" --write",
     "pretty:sass": "prettier \"src/sass/**/*.scss\" --write",
     "pretty:js": "prettier \"src/js/**/*.js\" --write",
     "pretty": "npm-run-all --serial pretty:*",

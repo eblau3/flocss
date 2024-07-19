@@ -12,7 +12,7 @@
   flex-wrap: wrap;
 }
 
-@include responsive using ($prefix) {
+@include apply-breakpoints using ($prefix) {
   .#{$prefix}l-grid {
     &__auto {
       flex: 0 1 auto;

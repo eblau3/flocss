@@ -10,7 +10,7 @@
 // --------------------------------------------------
 @use '../global' as *;
 
-@include responsive using ($prefix) {
+@include apply-breakpoints using ($prefix) {
   .#{$prefix}l-gutter--none {
     margin-top: 0;
     margin-left: 0;

@@ -1,7 +1,7 @@
 @use '../../../global' as *;
 
 // line-height
-@include responsive using ($prefix) {
+@include apply-breakpoints using ($prefix) {
   @each $name, $value in $line-height {
     .#{$prefix}u-leading-#{$name} {
       line-height: line-height($name) !important;

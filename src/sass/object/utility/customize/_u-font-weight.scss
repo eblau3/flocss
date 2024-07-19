@@ -1,7 +1,7 @@
 @use '../../../global' as *;
 
 // font-weight
-@include responsive using ($prefix) {
+@include apply-breakpoints using ($prefix) {
   @each $name, $value in $font-weight {
     .#{$prefix}u-font-#{$name} {
       font-weight: $value !important;

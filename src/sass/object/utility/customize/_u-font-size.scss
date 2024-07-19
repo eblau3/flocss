@@ -1,7 +1,7 @@
 @use '../../../global' as *;
 
 // font-size
-@include responsive using ($prefix) {
+@include apply-breakpoints using ($prefix) {
   @each $name, $value in $font-size {
     .#{$prefix}u-text-#{$name} {
       font-size: $value !important;

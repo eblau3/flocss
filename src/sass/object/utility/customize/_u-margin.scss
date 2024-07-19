@@ -1,6 +1,6 @@
 @use '../../../global' as *;
 
-@include responsive using ($prefix) {
+@include apply-breakpoints using ($prefix) {
   .#{$prefix}u-m-auto {
     margin: auto !important;
   }

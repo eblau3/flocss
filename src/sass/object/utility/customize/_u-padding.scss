@@ -1,6 +1,6 @@
 @use '../../../global' as *;
 
-@include responsive using ($prefix) {
+@include apply-breakpoints using ($prefix) {
   // padding
   .#{$prefix}u-p-0 {
     padding: 0 !important;

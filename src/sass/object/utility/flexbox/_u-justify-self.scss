@@ -1,7 +1,7 @@
 @use '../../../global' as *;
 
 // justify-self
-@include responsive using ($prefix) {
+@include apply-breakpoints using ($prefix) {
   .#{$prefix}u-justify-self-auto {
     justify-self: auto !important;
   }

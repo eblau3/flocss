@@ -1,7 +1,7 @@
 @use '../../../global' as *;
 
 // width
-@include responsive using ($prefix) {
+@include apply-breakpoints using ($prefix) {
   .#{$prefix}u-w-auto {
     width: auto !important;
   }

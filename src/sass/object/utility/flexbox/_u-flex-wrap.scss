@@ -1,7 +1,7 @@
 @use '../../../global' as *;
 
 // flex-wrap
-@include responsive using ($prefix) {
+@include apply-breakpoints using ($prefix) {
   .#{$prefix}u-flex-wrap {
     flex-wrap: wrap !important;
   }

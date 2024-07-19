@@ -2,7 +2,7 @@
 
 // word-break
 
-@include responsive using ($prefix) {
+@include apply-breakpoints using ($prefix) {
   .#{$prefix}u-break-normal {
     word-break: normal !important;
     overflow-wrap: normal !important;

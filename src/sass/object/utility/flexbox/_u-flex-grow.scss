@@ -1,7 +1,7 @@
 @use '../../../global' as *;
 
 // flex-grow
-@include responsive using ($prefix) {
+@include apply-breakpoints using ($prefix) {
   .#{$prefix}u-flex-grow-0 {
     flex-grow: 0 !important;
   }

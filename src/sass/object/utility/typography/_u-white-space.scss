@@ -1,7 +1,7 @@
 @use '../../../global' as *;
 
 // white-space
-@include responsive using ($prefix) {
+@include apply-breakpoints using ($prefix) {
   .#{$prefix}u-whitespace-normal {
     white-space: normal !important;
   }
