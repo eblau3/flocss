@@ -22,7 +22,7 @@
     "copy:sitemap": "cpx \"src/sitemap.xml\" dist/",
     "copy:robots": "cpx \"src/robots.txt\" dist/",
     "copy:favicon": "cpx \"src/favicon.ico\" dist/",
-    "copy:og": "cpx \"src/og.png\" dist/",
+    "copy:og-image": "cpx \"src/og-image.png\" dist/",
     "copy:apple-touch-icon": "cpx \"src/apple-touch-icon.png\" dist/",
     "copy": "npm-run-all --parallel copy:*",
     "clean": "rimraf dist",
