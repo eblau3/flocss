@@ -27,11 +27,9 @@
 
 .c-hover--underline {
   text-decoration: underline;
-  transition: all 0.2s easing('ease-out-quart');
 
   &:hover {
     text-decoration: none;
-    opacity: 1;
   }
 }
 

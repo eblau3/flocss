@@ -73,7 +73,7 @@ $easing: (
   'ease-out-circ': cubic-bezier(0, 0.55, 0.45, 1),
 );
 $breakpoints: (
-  'md': 840px,
   'sm': 430px,
+  'md': 840px,
 );
-$path: '../images';
+$image-path: '../images';

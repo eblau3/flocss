@@ -45,7 +45,7 @@
 
 // image
 @function image($name) {
-  @return url('#{$path}/#{$name}');
+  @return url('#{$image-path}/#{$name}');
 }
 
 // responsive-clamp
