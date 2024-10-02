@@ -61,8 +61,5 @@
   $max-container: strip-unit($max-container);
   $slope: math.div(($max-size - $min-size), ($max-container - $min-container));
   $y-intercept: $min-size - $slope * $min-container;
-  @return min(
-    clamp(#{$min-size}rem, #{$y-intercept}rem + #{$slope * 100}vw, #{$max-size}rem),
-    ($min-size / $min-container) * 100vw
-  );
+  @return clamp(#{$min-size}rem, #{$y-intercept}rem + #{$slope * 100}vw, #{$max-size}rem);
 }
