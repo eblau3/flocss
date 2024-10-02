@@ -1,10 +1,5 @@
 # DEMO
 
-## Install
-```
-npm install
-```
-
 ## Build
 ```
 npm run build
@@ -20,9 +15,9 @@ npm run server
 npm run watch
 ```
 
-## Pretty
+## Lint
 ```
-npm run pretty
+npm run lint
 ```
 
 ## Format
@@ -30,7 +25,7 @@ npm run pretty
 npm run format
 ```
 
-## Lint
+## Pretty
 ```
-npm run lint
+npm run pretty
 ```

@@ -49,7 +49,7 @@
 }
 
 // responsive-clamp
-@function responsive-clamp (
+@function responsive-clamp(
   $min-size,
   $max-size,
   $min-container: rem(375),

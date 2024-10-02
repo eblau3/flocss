@@ -4,20 +4,20 @@
 @include apply-breakpoints using ($prefix) {
   .#{$prefix}u-clamp-1 {
     display: -webkit-box;
+    overflow: hidden;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    overflow: hidden;
   }
   .#{$prefix}u-clamp-2 {
     display: -webkit-box;
+    overflow: hidden;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    overflow: hidden;
   }
   .#{$prefix}u-clamp-3 {
     display: -webkit-box;
+    overflow: hidden;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    overflow: hidden;
   }
 }

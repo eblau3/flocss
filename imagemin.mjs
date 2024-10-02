@@ -1,7 +1,7 @@
 import imagemin from 'imagemin-keep-folder';
 import imageminWebp from "imagemin-webp";
 import imageminSvgo from "imagemin-svgo";
- 
+
 imagemin(['src/images/**/*'], {
   use: [
     imageminWebp({
@@ -11,5 +11,5 @@ imagemin(['src/images/**/*'], {
   ],
   replaceOutputDir: output => {
     return output.replace(/images\//, '../dist/assets/images/')
-  }
+  },
 });

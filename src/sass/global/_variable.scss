@@ -2,16 +2,17 @@
 
 $spacing: (
   'none': 0,
-  '2xs': rem(4),
   'xs': rem(8),
-  'sm': rem(16),
-  'md': rem(24),
-  'lg': rem(32),
-  'xl': rem(48),
-  '2xl': rem(64),
-  '3xl': rem(80),
-  '4xl': rem(112),
-  '5xl': rem(144),
+  'sm': rem(12),
+  'md': rem(16),
+  'lg': rem(24),
+  'xl': rem(32),
+  '2xl': rem(48),
+  '3xl': rem(64),
+  '4xl': rem(96),
+  '5xl': rem(128),
+  '6xl': rem(192),
+  '7xl': rem(256),
 );
 $color: (
   'black': #000000,
@@ -74,6 +75,6 @@ $easing: (
 );
 $breakpoints: (
   'sm': 430px,
-  'md': 840px,
+  'md': 820px,
 );
 $image-path: '../images';
