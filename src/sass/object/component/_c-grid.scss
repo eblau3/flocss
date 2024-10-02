@@ -1,19 +1,19 @@
 // --------------------------------------------------
 // Usage:
-// <ul class="l-grid">
-//   <li class="l-grid__6">...</li>
-//   <li class="l-grid__6">...</li>
+// <ul class="c-grid">
+//   <li class="c-grid__6">...</li>
+//   <li class="c-grid__6">...</li>
 // </ul>
 // --------------------------------------------------
-@use '../global' as *;
+@use '../../global' as *;
 
-.l-grid {
+.c-grid {
   display: flex;
   flex-wrap: wrap;
 }
 
 @include apply-breakpoints using ($prefix) {
-  .#{$prefix}l-grid {
+  .#{$prefix}c-grid {
     &__auto {
       flex: 0 1 auto;
     }

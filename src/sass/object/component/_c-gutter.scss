@@ -1,17 +1,17 @@
 // --------------------------------------------------
 // Usage:
-// <ul class="l-grid l-gutter--lg">
-//   <li class="l-grid__6">...</li>
-//   <li class="l-grid__6">...</li>
+// <ul class="c-grid c-gutter--lg">
+//   <li class="c-grid__6">...</li>
+//   <li class="c-grid__6">...</li>
 // </ul>
 //
 // Modifire:
 // l-grid--[ $spacing ]
 // --------------------------------------------------
-@use '../global' as *;
+@use '../../global' as *;
 
 @include apply-breakpoints using ($prefix) {
-  .#{$prefix}l-gutter--none {
+  .#{$prefix}c-gutter--none {
     margin-top: 0;
     margin-left: 0;
 
