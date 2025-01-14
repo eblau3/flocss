@@ -3,15 +3,15 @@
 // indent
 @include apply-breakpoints using ($prefix) {
   .#{$prefix}u-indent-1 {
-    padding-left: 1em;
-    text-indent: -1em;
+    padding-left: 1em !important;
+    text-indent: -1em !important;
   }
   .#{$prefix}u-indent-2 {
-    padding-left: 2em;
-    text-indent: -2em;
+    padding-left: 2em !important;
+    text-indent: -2em !important;
   }
   .#{$prefix}u-indent-3 {
-    padding-left: 3em;
-    text-indent: -3em;
+    padding-left: 3em !important;
+    text-indent: -3em !important;
   }
 }

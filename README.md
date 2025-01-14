@@ -1,4 +1,4 @@
-# DEMO
+# Project Name
 
 ## Build
 ```
