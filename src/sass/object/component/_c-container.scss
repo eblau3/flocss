@@ -1,19 +1,16 @@
-// --------------------------------------------------
-// Usage:
-// <div class="c-container">...</div>
-//
-// Modifire:
-// c-container--[ sm ]
-// --------------------------------------------------
 @use '../../global' as *;
 
 .c-container {
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
+}
 
-  &--sm {
-    max-width: 960px;
-  }
+.c-container--full {
+  width: 100%;
+}
+
+.c-container--sm {
+  max-width: 960px;
 }

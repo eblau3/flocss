@@ -4,7 +4,7 @@
 @include apply-breakpoints using ($prefix) {
   @each $name, $value in $letter-spacing {
     .#{$prefix}u-tracking-#{$name} {
-      letter-spacing: letter-spacing($name) !important;
+      letter-spacing: var(--tracking-#{$name}) !important;
     }
   }
 }

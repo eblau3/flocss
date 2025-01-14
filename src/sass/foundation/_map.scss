@@ -1,0 +1,53 @@
+@use '../global' as *;
+@use 'sass:map';
+
+:root {
+  // color
+  @each $name, $value in $color {
+    --color-#{$name}: #{$value};
+  }
+
+  // spacing
+  @each $name, $value in $spacing {
+    --spacing-#{$name}: #{responsive-clamp(calc($value * 0.5), $value)};
+  }
+
+  // font-size
+  @each $name, $value in $font-size {
+    $min: map.get($value, 'min');
+    $max: map.get($value, 'max');
+
+    --text-#{$name}: #{responsive-clamp($min, $max)};
+  }
+
+  // font-family
+  @each $name, $value in $font-family {
+    --font-#{$name}: #{$value};
+  }
+
+  // font-weight
+  @each $name, $value in $font-weight {
+    --font-#{$name}: #{$value};
+  }
+
+  // letter-spacing
+  @each $name, $value in $letter-spacing {
+    --tracking-#{$name}: #{$value};
+  }
+
+  // line-height
+  @each $name, $value in $line-height {
+    --leading-#{$name}: #{$value};
+  }
+
+  // easing
+  @each $name, $value in $easing {
+    --#{$name}: #{$value};
+  }
+
+  // header-height
+  --header-height: 90px;
+  @include media(md) {
+    --header-height: 60px;
+  }
+}

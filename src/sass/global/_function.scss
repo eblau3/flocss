@@ -1,65 +1,45 @@
-@use 'root' as *;
 @use 'variable' as *;
 @use 'sass:map';
+@use 'sass:meta';
 @use 'sass:math';
 
-// font-size
-@function font-size($key) {
-  @return map.get($font-size, $key);
+// map-deep-get
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    @if not map.has-key($map, $key) {
+      @return null;
+    }
+
+    $map: map.get($map, $key);
+  }
+  @return $map;
 }
 
-// font-family
-@function font-family($key) {
-  @return map.get($font-family, $key);
+// rem
+@function rem($px) {
+  @return calc(($px / 16) * 1rem);
 }
 
-// font-weight
-@function font-weight($key) {
-  @return map.get($font-weight, $key);
-}
-
-// letter-spacing
-@function letter-spacing($key) {
-  @return map.get($letter-spacing, $key);
-}
-
-// line-height
-@function line-height($key) {
-  @return map.get($line-height, $key);
-}
-
-// color
-@function color($key) {
-  @return map.get($color, $key);
-}
-
-// spacing
-@function spacing($key) {
-  @return map.get($spacing, $key);
-}
-
-// easing
-@function easing($key) {
-  @return map.get($easing, $key);
-}
-
-// image
-@function image($name) {
-  @return url('#{$image-path}/#{$name}');
+// strip-unit
+@function strip-unit($number) {
+  @if meta.type-of($number) == 'number' and not math.is-unitless($number) {
+    @return math.div($number, ($number * 0 + 1));
+  }
+  @return $number;
 }
 
 // responsive-clamp
-@function responsive-clamp(
-  $min-size,
-  $max-size,
-  $min-container: rem(375),
-  $max-container: rem(1200)
-) {
+@function responsive-clamp($min-size, $max-size, $min-container: 375px, $max-container: 1200px) {
   $min-size: strip-unit($min-size);
   $max-size: strip-unit($max-size);
   $min-container: strip-unit($min-container);
   $max-container: strip-unit($max-container);
   $slope: math.div(($max-size - $min-size), ($max-container - $min-container));
   $y-intercept: $min-size - $slope * $min-container;
-  @return clamp(#{$min-size}rem, #{$y-intercept}rem + #{$slope * 100}vw, #{$max-size}rem);
+  @return clamp(#{$min-size}px, #{$y-intercept}px + #{$slope * 100}vw, #{$max-size}px);
+}
+
+// image
+@function image($path) {
+  @return url('#{$image-path}/#{$path}');
 }

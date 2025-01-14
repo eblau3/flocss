@@ -1,10 +1,3 @@
-// --------------------------------------------------
-// Usage:
-// <ul class="c-grid">
-//   <li class="c-grid__6">...</li>
-//   <li class="c-grid__6">...</li>
-// </ul>
-// --------------------------------------------------
 @use '../../global' as *;
 
 .c-grid {
@@ -13,69 +6,67 @@
 }
 
 @include apply-breakpoints using ($prefix) {
-  .#{$prefix}c-grid {
-    &__auto {
-      flex: 0 1 auto;
-    }
+  .#{$prefix}c-grid__auto {
+    flex: 0 1 auto;
+  }
 
-    &__fixed {
-      flex: 0 0 auto;
-    }
+  .#{$prefix}c-grid__fixed {
+    flex: 0 0 auto;
+  }
 
-    &__1 {
-      width: 8.3333%;
-    }
+  .#{$prefix}c-grid__1 {
+    width: 8.3333%;
+  }
 
-    &__2 {
-      width: 16.6666%;
-    }
+  .#{$prefix}c-grid__2 {
+    width: 16.6666%;
+  }
 
-    &__3 {
-      width: 25%;
-    }
+  .#{$prefix}c-grid__3 {
+    width: 25%;
+  }
 
-    &__4 {
-      width: 33.3333%;
-    }
+  .#{$prefix}c-grid__4 {
+    width: 33.3333%;
+  }
 
-    &__5 {
-      width: 41.6666%;
-    }
+  .#{$prefix}c-grid__5 {
+    width: 41.6666%;
+  }
 
-    &__6 {
-      width: 50%;
-    }
+  .#{$prefix}c-grid__6 {
+    width: 50%;
+  }
 
-    &__7 {
-      width: 58.3333%;
-    }
+  .#{$prefix}c-grid__7 {
+    width: 58.3333%;
+  }
 
-    &__8 {
-      width: 66.6666%;
-    }
+  .#{$prefix}c-grid__8 {
+    width: 66.6666%;
+  }
 
-    &__9 {
-      width: 75%;
-    }
+  .#{$prefix}c-grid__9 {
+    width: 75%;
+  }
 
-    &__10 {
-      width: 83.3333%;
-    }
+  .#{$prefix}c-grid__10 {
+    width: 83.3333%;
+  }
 
-    &__11 {
-      width: 91.6666%;
-    }
+  .#{$prefix}c-grid__11 {
+    width: 91.6666%;
+  }
 
-    &__12 {
-      width: 100%;
-    }
+  .#{$prefix}c-grid__12 {
+    width: 100%;
+  }
 
-    &__1of5 {
-      width: 20%;
-    }
+  .#{$prefix}c-grid__1of5 {
+    width: 20%;
+  }
 
-    &__1of7 {
-      width: 14.285%;
-    }
+  .#{$prefix}c-grid__1of7 {
+    width: 14.285%;
   }
 }

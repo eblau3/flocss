@@ -1,34 +1,63 @@
-@use 'root' as *;
-
-$spacing: (
-  'none': 0,
-  'xs': rem(8),
-  'sm': rem(12),
-  'md': rem(16),
-  'lg': rem(24),
-  'xl': rem(32),
-  '2xl': rem(48),
-  '3xl': rem(64),
-  '4xl': rem(96),
-  '5xl': rem(128),
-  '6xl': rem(192),
-  '7xl': rem(256),
-);
 $color: (
   'black': #000000,
   'white': #ffffff,
+  'blue': #99c3ff,
+);
+$spacing: (
+  '0': 0,
+  'xs': 8px,
+  'sm': 12px,
+  'md': 16px,
+  'lg': 24px,
+  'xl': 32px,
+  '2xl': 48px,
+  '3xl': 64px,
+  '4xl': 96px,
+  '5xl': 128px,
+  '6xl': 192px,
+  '7xl': 256px,
 );
 $font-size: (
-  '2xs': rem(10),
-  'xs': rem(12),
-  'sm': rem(14),
-  'normal': rem(16),
-  'lg': rem(20),
-  'xl': rem(25),
-  '2xl': rem(31.25),
-  '3xl': rem(39.06),
-  '4xl': rem(48.83),
-  '5xl': rem(61.04),
+  '2xs': (
+    'min': 8px,
+    'max': 10px,
+  ),
+  'xs': (
+    'min': 10px,
+    'max': 12px,
+  ),
+  'sm': (
+    'min': 12px,
+    'max': 14px,
+  ),
+  'normal': (
+    'min': 14px,
+    'max': 16px,
+  ),
+  'lg': (
+    'min': 16px,
+    'max': 20px,
+  ),
+  'xl': (
+    'min': 18px,
+    'max': 24px,
+  ),
+  '2xl': (
+    'min': 22px,
+    'max': 32px,
+  ),
+  '3xl': (
+    'min': 26px,
+    'max': 40px,
+  ),
+  '4xl': (
+    'min': 30px,
+    'max': 48px,
+  ),
+  '5xl': (
+    'min': 37px,
+    'max': 62px,
+  ),
 );
 $font-family: (
   'system': #{'Helvetica Neue',
@@ -65,13 +94,9 @@ $line-height: (
   'xl': 2,
 );
 $easing: (
-  'ease-out-sine': cubic-bezier(0.61, 1, 0.88, 1),
-  'ease-out-quad': cubic-bezier(0.5, 1, 0.89, 1),
-  'ease-out-cubic': cubic-bezier(0.33, 1, 0.68, 1),
-  'ease-out-quart': cubic-bezier(0.25, 1, 0.5, 1),
-  'ease-out-quint': cubic-bezier(0.22, 1, 0.36, 1),
-  'ease-out-expo': cubic-bezier(0.16, 1, 0.3, 1),
-  'ease-out-circ': cubic-bezier(0, 0.55, 0.45, 1),
+  'ease-in': cubic-bezier(0.5, 0, 0.75, 0),
+  'ease': cubic-bezier(0.76, 0, 0.24, 1),
+  'ease-out': cubic-bezier(0.25, 1, 0.5, 1),
 );
 $breakpoints: (
   'sm': 430px,

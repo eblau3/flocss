@@ -2,36 +2,27 @@
 
 // gap
 @include apply-breakpoints using ($prefix) {
-  .#{$prefix}u-gap-0 {
-    gap: 0 !important;
-  }
   @each $name, $value in $spacing {
     .#{$prefix}u-gap-#{$name} {
-      gap: spacing($name) !important;
+      gap: var(--spacing-#{$name}) !important;
     }
   }
 }
 
 // column-gap
 @include apply-breakpoints using ($prefix) {
-  .#{$prefix}u-gap-x-0 {
-    column-gap: 0 !important;
-  }
   @each $name, $value in $spacing {
     .#{$prefix}u-gap-x-#{$name} {
-      column-gap: spacing($name) !important;
+      column-gap: var(--spacing-#{$name}) !important;
     }
   }
 }
 
 // row-gap
 @include apply-breakpoints using ($prefix) {
-  .#{$prefix}u-gap-y-0 {
-    row-gap: 0 !important;
-  }
   @each $name, $value in $spacing {
     .#{$prefix}u-gap-y-#{$name} {
-      row-gap: spacing($name) !important;
+      row-gap: var(--spacing-#{$name}) !important;
     }
   }
 }

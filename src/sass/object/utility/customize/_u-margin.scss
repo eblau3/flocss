@@ -1,17 +1,37 @@
 @use '../../../global' as *;
 
 @include apply-breakpoints using ($prefix) {
+  // margin
   .#{$prefix}u-m-auto {
     margin: auto !important;
   }
-  .#{$prefix}u-m-0 {
-    margin: 0 !important;
-  }
-
-  // margin
   @each $name, $value in $spacing {
     .#{$prefix}u-m-#{$name} {
-      margin: $value !important;
+      margin: var(--spacing-#{$name}) !important;
+    }
+  }
+
+  // margin-x
+  .#{$prefix}u-mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  @each $name, $value in $spacing {
+    .#{$prefix}u-mx-#{$name} {
+      margin-right: var(--spacing-#{$name}) !important;
+      margin-left: var(--spacing-#{$name}) !important;
+    }
+  }
+
+  // margin-y
+  .#{$prefix}u-my-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+  @each $name, $value in $spacing {
+    .#{$prefix}u-my-#{$name} {
+      margin-top: var(--spacing-#{$name}) !important;
+      margin-bottom: var(--spacing-#{$name}) !important;
     }
   }
 
@@ -19,12 +39,9 @@
   .#{$prefix}u-mt-auto {
     margin-top: auto !important;
   }
-  .#{$prefix}u-mt-0 {
-    margin-top: 0 !important;
-  }
   @each $name, $value in $spacing {
     .#{$prefix}u-mt-#{$name} {
-      margin-top: $value !important;
+      margin-top: var(--spacing-#{$name}) !important;
     }
   }
 
@@ -32,12 +49,9 @@
   .#{$prefix}u-mr-auto {
     margin-right: auto !important;
   }
-  .#{$prefix}u-mr-0 {
-    margin-right: 0 !important;
-  }
   @each $name, $value in $spacing {
     .#{$prefix}u-mr-#{$name} {
-      margin-right: $value !important;
+      margin-right: var(--spacing-#{$name}) !important;
     }
   }
 
@@ -45,12 +59,9 @@
   .#{$prefix}u-mb-auto {
     margin-bottom: auto !important;
   }
-  .#{$prefix}u-mb-0 {
-    margin-bottom: 0 !important;
-  }
   @each $name, $value in $spacing {
     .#{$prefix}u-mb-#{$name} {
-      margin-bottom: $value !important;
+      margin-bottom: var(--spacing-#{$name}) !important;
     }
   }
 
@@ -58,12 +69,9 @@
   .#{$prefix}u-ml-auto {
     margin-left: auto !important;
   }
-  .#{$prefix}u-ml-0 {
-    margin-left: 0 !important;
-  }
   @each $name, $value in $spacing {
     .#{$prefix}u-ml-#{$name} {
-      margin-left: $value !important;
+      margin-left: var(--spacing-#{$name}) !important;
     }
   }
 }

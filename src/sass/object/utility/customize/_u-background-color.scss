@@ -4,7 +4,7 @@
 @include apply-breakpoints using ($prefix) {
   @each $name, $value in $color {
     .#{$prefix}u-background-#{$name} {
-      background-color: $value !important;
+      background-color: var(--color-#{$name}) !important;
     }
   }
 }

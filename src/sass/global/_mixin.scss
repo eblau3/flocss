@@ -1,13 +1,15 @@
 @use 'sass:string';
 @use 'sass:map';
-@use 'root' as *;
 @use 'variable' as *;
 
 // media
 @mixin media($args) {
   @if $args == 'hover' {
     @media (hover: hover) {
-      @content;
+      &:hover,
+      &:focus {
+        @content;
+      }
     }
   } @else if $args == 'retina' {
     @media only screen and (resolution <= 2dppx) {

@@ -1,33 +1,14 @@
-// --------------------------------------------------
-// Usage:
-// <ul class="c-grid c-gutter--lg">
-//   <li class="c-grid__6">...</li>
-//   <li class="c-grid__6">...</li>
-// </ul>
-//
-// Modifire:
-// c-grid--[ $spacing ]
-// --------------------------------------------------
 @use '../../global' as *;
 
 @include apply-breakpoints using ($prefix) {
-  .#{$prefix}c-gutter--none {
-    margin-top: 0;
-    margin-left: 0;
-
-    > * {
-      padding-top: 0;
-      padding-left: 0;
-    }
-  }
   @each $name, $value in $spacing {
-    .#{$prefix}l-gutter--#{$name} {
-      margin-top: -#{$value};
-      margin-left: -#{$value};
+    .#{$prefix}c-gutter--#{$name} {
+      margin-top: calc(var(--spacing-#{$name}) * -1);
+      margin-left: calc(var(--spacing-#{$name}) * -1);
 
-      > * {
-        padding-top: $value;
-        padding-left: $value;
+      > [class*='c-grid__'] {
+        padding-top: var(--spacing-#{$name});
+        padding-left: var(--spacing-#{$name});
       }
     }
   }

@@ -1,13 +1,3 @@
-// --------------------------------------------------
-// Usage:
-// <div class="c-frame c-frame--16to9">
-//  <img src="">
-// </div>
-//
-// Modifire:
-// c-frame--[ 1to1 | 4to3 | 3to2 | 16to9 | 2to1 | 12to5 ]
-// c-frame--contain
-// --------------------------------------------------
 @use '../../global' as *;
 
 .c-frame {
@@ -22,35 +12,46 @@
     height: 100%;
     object-fit: cover;
   }
+}
 
-  &--contain {
-    > img,
-    > iframe {
-      object-fit: contain;
-    }
+.c-frame--contain {
+  > img,
+  > iframe {
+    object-fit: contain;
   }
+}
 
-  &--1to1 {
+.c-frame--map {
+  aspect-ratio: 12/5;
+  @include media(sm) {
     aspect-ratio: 1/1;
   }
+}
 
-  &--4to3 {
-    aspect-ratio: 4/3;
-  }
+.c-frame--round {
+  border-radius: 10px;
+}
 
-  &--3to2 {
-    aspect-ratio: 3/2;
-  }
+.c-frame--1to1 {
+  aspect-ratio: 1/1;
+}
 
-  &--16to9 {
-    aspect-ratio: 16/9;
-  }
+.c-frame--4to3 {
+  aspect-ratio: 4/3;
+}
 
-  &--2to1 {
-    aspect-ratio: 2/1;
-  }
+.c-frame--3to2 {
+  aspect-ratio: 3/2;
+}
 
-  &--12to5 {
-    aspect-ratio: 12/5;
-  }
+.c-frame--16to9 {
+  aspect-ratio: 16/9;
+}
+
+.c-frame--2to1 {
+  aspect-ratio: 2/1;
+}
+
+.c-frame--12to5 {
+  aspect-ratio: 12/5;
 }

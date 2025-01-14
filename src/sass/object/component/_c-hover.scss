@@ -1,23 +1,7 @@
-// --------------------------------------------------
-// Usage:
-// <a class="c-hover c-hover--opacity">...</a>
-//
-// Modifire:
-// c-hover--[ remove | underline | light | dark ]
-// --------------------------------------------------
 @use '../../global' as *;
 
 .c-hover {
   cursor: pointer;
-}
-
-.c-hover--opacity {
-  opacity: 1;
-  transition: all 0.2s easing('ease-out-quart');
-
-  &:hover {
-    opacity: 0.7;
-  }
 }
 
 .c-hover--remove {
@@ -27,26 +11,31 @@
 
 .c-hover--underline {
   text-decoration: underline;
-
-  &:hover {
+  @include media(hover) {
     text-decoration: none;
+  }
+}
+
+.c-hover--opacity {
+  opacity: 1;
+  transition: all 0.2s var(--ease-out);
+  @include media(hover) {
+    opacity: 0.7;
   }
 }
 
 .c-hover--light {
   filter: brightness(1);
-  transition: all 0.2s easing('ease-out-quart');
-
-  &:hover {
+  transition: all 0.2s var(--ease-out);
+  @include media(hover) {
     filter: brightness(1.1);
   }
 }
 
 .c-hover--dark {
   filter: brightness(1);
-  transition: all 0.2s easing('ease-out-quart');
-
-  &:hover {
+  transition: all 0.2s var(--ease-out);
+  @include media(hover) {
     filter: brightness(0.9);
   }
 }

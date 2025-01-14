@@ -4,7 +4,7 @@
 @include apply-breakpoints using ($prefix) {
   @each $name, $value in $font-weight {
     .#{$prefix}u-font-#{$name} {
-      font-weight: $value !important;
+      font-weight: var(--font-#{$name}) !important;
     }
   }
 }

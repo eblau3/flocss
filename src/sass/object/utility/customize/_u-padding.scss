@@ -2,52 +2,37 @@
 
 @include apply-breakpoints using ($prefix) {
   // padding
-  .#{$prefix}u-p-0 {
-    padding: 0 !important;
-  }
   @each $name, $value in $spacing {
     .#{$prefix}u-p-#{$name} {
-      padding: $value !important;
+      padding: var(--spacing-#{$name}) !important;
     }
   }
 
   // padding-top
-  .#{$prefix}u-pt-0 {
-    padding-top: 0 !important;
-  }
   @each $name, $value in $spacing {
     .#{$prefix}u-pt-#{$name} {
-      padding-top: $value !important;
+      padding-top: var(--spacing-#{$name}) !important;
     }
   }
 
   // padding-right
-  .#{$prefix}u-pr-0 {
-    padding-right: 0 !important;
-  }
   @each $name, $value in $spacing {
     .#{$prefix}u-pr-#{$name} {
-      padding-right: $value !important;
+      padding-right: var(--spacing-#{$name}) !important;
     }
   }
 
   // padding-bottom
-  .#{$prefix}u-pb-0 {
-    padding-bottom: 0 !important;
-  }
   @each $name, $value in $spacing {
     .#{$prefix}u-pb-#{$name} {
-      padding-bottom: $value !important;
+      padding-bottom: var(--spacing-#{$name}) !important;
     }
   }
 
   // padding-left
-  .#{$prefix}u-pl-0 {
-    padding-left: 0 !important;
-  }
   @each $name, $value in $spacing {
     .#{$prefix}u-pl-#{$name} {
-      padding-left: $value !important;
+      padding-left: var(--spacing-#{$name}) !important;
     }
   }
 }
