@@ -1,6 +1,6 @@
 @use 'sass:string';
 @use 'sass:map';
-@use 'variable' as *;
+@use 'map' as *;
 
 // media
 @mixin media($args) {
